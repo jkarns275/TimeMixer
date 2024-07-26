@@ -33,6 +33,7 @@ python -u run.py \
   --c_out 321 \
   --des 'Exp' \
   --itr 1 \
+  --use_gpu true \
   --d_model $d_model \
   --d_ff $d_ff \
   --batch_size $batch_size \

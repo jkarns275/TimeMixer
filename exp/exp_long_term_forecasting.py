@@ -212,6 +212,7 @@ class Exp_Long_Term_Forecast(Exp_Basic):
 
         best_model_path = path + '/' + 'checkpoint.pth'
         self.model.load_state_dict(torch.load(best_model_path))
+        torch.save(model.state_dict(), path + '/' + 'best_trained.pth')
 
         return self.model
 
